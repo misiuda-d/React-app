@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { addList, getAllLists } from '../../redux/store';
+import { useDispatch } from 'react-redux';
+import { addList} from '../../redux/listsRedux';
 import Button from '../Button/Button';
 import TextInput from '../TextInput/TextInput';
 import styles from './ListForm.module.scss';
@@ -10,14 +10,11 @@ const ListForm = props => {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
 
-  const idNumber = useSelector(getAllLists).length + 1;
-  const id = idNumber.toString();
-
   const dispatch = useDispatch();
 
   const handleSubmit = e => {
     e.preventDefault();
-    dispatch(addList({ id, title, description }));
+    dispatch(addList({ title, description }));
     setTitle('');
     setDescription('');
   };

@@ -46,7 +46,8 @@ const initialState = {
     { id: '3', isFavorite: false, columnId: '2', title: 'Harry Potter' },
     { id: '4', isFavorite: false, columnId: '2', title: 'Star Wars' },
     { id: '5', isFavorite: false, columnId: '3', title: 'The Witcher' },
-    { id: '6', isFavorite: false, columnId: '3', title: 'Skyrim' }
+    { id: '6', isFavorite: false, columnId: '3', title: 'Skyrim' },
+    { id: '7', isFavorite: false, columnId: '4', title: 'Test card'},
   ],
 
   searchString: '',
