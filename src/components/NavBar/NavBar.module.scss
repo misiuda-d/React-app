@@ -21,8 +21,12 @@
         display: inline-flex;
     }
     a {
-        color: inherit;
+        color: $color-light;
         text-decoration: none;
         margin: 0 20px;
+    }
+
+    .linkActive {
+        color: $color-warning;
     }
 }

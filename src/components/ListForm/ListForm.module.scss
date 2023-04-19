@@ -1,0 +1,12 @@
+@import '../../styles/settings.scss';
+
+.listForm {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listForm input, .listForm button {
+    margin: 10px;
+}

@@ -8,10 +8,11 @@ import styles from './ColumnForm.module.scss';
 const ColumnForm = props => {
   const [title, setTitle] = useState('');
   const [icon, setIcon] = useState('');
+  const listId = props.listId;
   const dispatch = useDispatch();
   const handleSubmit = e => {
     e.preventDefault();
-    dispatch(addColumn({ title, icon }));
+    dispatch(addColumn({ listId, title, icon }));
     setTitle('');
     setIcon('');
   };
