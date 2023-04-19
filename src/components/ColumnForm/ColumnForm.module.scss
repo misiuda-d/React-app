@@ -1,0 +1,12 @@
+@import '../../styles/settings.scss';
+
+.columnForm {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.columnForm input, .columnForm button {
+    margin: 10px;
+}
