@@ -1,0 +1,28 @@
+@import '../../styles/settings.scss';
+
+.nav {
+    background: darken($color-dark, 3%);
+    margin: 0 auto;
+}
+
+.navBar {
+    background: darken($color-dark, 3%);
+    font-family: $font-text;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    max-width: 1200px; 
+    margin: 0px auto;
+
+
+    ul {
+        list-style: none;
+        display: inline-flex;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+        margin: 0 20px;
+    }
+}
