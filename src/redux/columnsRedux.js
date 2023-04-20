@@ -6,7 +6,7 @@ export const getColumnsByList = ({ columns }, listId) => columns.filter(column =
 const ADD_COLUMN = 'app/columns/ADD_COLUMN';
 
 // action creators
-export const addColumn = payload => ({ type: 'ADD_COLUMN', payload });
+export const addColumn = payload => ({ type: ADD_COLUMN, payload });
 
 const columnsReducer = (statePart = [], action) => {
     switch(action.type) {
